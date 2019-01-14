@@ -71,9 +71,11 @@ class Albums extends CI_Controller {
 	//function to delete albums
 	public function delete()
 	{
+		$_POST = json_decode(file_get_contents('php://input'), true);
 		$albumid=$this->input->post('albumid');
+		$row=$this->input->post('row');
 		$this->albums_model->delete( $albumid );
-		$date['album']=$albumid;
+		$data['album']=$row;
 		$this->load->view( 'jsons_rest\delete', $data );
 	}
 	//function to add review to the database

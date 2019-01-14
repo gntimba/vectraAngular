@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="album" ng-init='albums=[{"id":"2","album_name":"Beatiful","album_artist":"DJ Sbu","album_cover":"154085947901-Beautiful-feat-Portia-Monique-mp3-image.jpg","released_year":"2018-10-01","date_created":"2018-10-30 02:31:19","isActive":"1"},{"id":"3","album_name":"Oh well","album_artist":"DJ Slique","album_cover":"1540859634Bis.jpg","released_year":"2018-08-08","date_created":"2018-10-30 02:33:54","isActive":"1"},{"id":"4","album_name":"Vatel","album_artist":"Moozlie","album_cover":"1540859771Moozlie-FT_-Kid-X.png","released_year":"2018-09-12","date_created":"2018-10-30 02:36:11","isActive":"1"},{"id":"5","album_name":"Nalingi","album_artist":"Manu WorldStar","album_cover":"154085997301-NaLingi-mp3-image.jpg","released_year":"2018-08-09","date_created":"2018-10-30 02:39:33","isActive":"1"},{"id":"6","album_name":"Nginothando","album_artist":"karabo","album_cover":"1540924197nginothando.jpg","released_year":"2018-08-15","date_created":"2018-10-30 20:29:57","isActive":"1"}]'>
+<html lang="en" ng-app="album">
 <head>
 	<meta charset="utf-8" />
 

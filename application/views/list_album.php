@@ -35,9 +35,10 @@
 					</td>
 					<td>
 						<a href="<?php echo base_url('albums/viewRviews/')?>{{albm.id}}" class="btn btn-warning">View Reviews</a>
-						<button class="btn btn-danger delete"data-ng-click="removeAlbum($index)" >Remove Album</button>
+						
+						<button id="{{albm.id}}" class="btn btn-danger delete"data-ng-click="removeAlbum($index,albm.id)" >Remove Album</button>
 					
-						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-album="{{albm.id}}" data-whatever="{{albm.id}}">Review {{albm.albm}}</button>
+						<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-album="{{albm.id}}" data-whatever="{{albm.id}}">Review {{albm.album_name}}</button>
 					</td>
 				</tr>
 				
