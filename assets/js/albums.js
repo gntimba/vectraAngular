@@ -20,7 +20,7 @@ album.controller('albcr', function ($scope, $http) {
 			albumid: id
 
 		};
-		
+
 
 		$http.post("http://localhost/vectraAngular/albums/delete", JSON.stringify(data)).then(function (response) {
 
@@ -29,7 +29,7 @@ album.controller('albcr', function ($scope, $http) {
 			$scope.albums.splice(response.data, 1);
 
 		}, function (response) {
-console.log("Unable to perform get request");
+			console.log("Unable to perform get request");
 			console.log(response);
 			// this function handles error
 
