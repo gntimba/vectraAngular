@@ -14,6 +14,7 @@ class Albums extends CI_Controller {
 		$this->load->view( 'layout\main', $data );
 	}
 	public function start(){
+		header('Access-Control-Allow-Origin: *');
 		$data['albums']=$this->albums_model->get_album();
 		$this->load->view( 'jsons_rest\all_album', $data );
 	}
